@@ -19,6 +19,7 @@ func main() {
 	println("Server starting on http://localhost:8080")
 	println("to Edit: http://localhost:8080/edit/mytitle")
 	println("to View: http://localhost:8080/view/mytitle")
+	println("you can insert any title you like")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
