@@ -1,0 +1,15 @@
+package main
+
+templ button(b bool) {
+	if b {
+		<button class="button">{ testID(false) }</button>
+	}
+	<button class="button">{ testID(true) }</button>
+}
+
+func testID(isTrue bool) string {
+	if isTrue {
+		return "testid-123"
+	}
+	return "testid-456"
+}
